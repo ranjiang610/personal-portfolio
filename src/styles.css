@@ -80,3 +80,19 @@
 .contact-card{border-radius:5px;overflow:hidden}
 .contact-icon{display:block;width:24px;height:24px;flex:none}
 
+/* 简历区仅在板块之间使用分隔线，项目条目通过留白区分。 */
+.resume-about,.resume-list{border-top-color:#2f2f2f}
+.about-row{border-bottom:0;padding-bottom:0;margin-bottom:32px}
+.history-row{border-top:0;padding:0;margin-bottom:32px}
+.history-row:last-child{margin-bottom:0}
+.resume-list:last-child{border-bottom:1px solid #2f2f2f}
+
+/* 自写 Skill 是项目精选下的次级标题，对应 Figma 的 32/48 字级。 */
+.skills-heading{display:block;margin:48px 0}
+.skills-heading h2{font-size:32px;line-height:48px;letter-spacing:0}
+.skills-heading p{max-width:730px;margin-top:16px;color:#86898f;line-height:21px}
+@media(max-width:900px){
+  .skills-heading{margin:48px 0 24px}
+  .skills-heading p{margin-top:16px}
+}
+
